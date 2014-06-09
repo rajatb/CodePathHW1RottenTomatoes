@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TopTenViewController.h"
 
-@interface TopDVDSViewController : UIViewController
+@interface TopDVDSViewController :TopTenViewController
 
 @end

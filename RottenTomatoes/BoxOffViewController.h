@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TopTenViewController.h"
 
-@interface BoxOffViewController : UIViewController
+@interface BoxOffViewController : TopTenViewController
 
 @end

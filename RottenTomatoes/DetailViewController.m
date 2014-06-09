@@ -7,8 +7,16 @@
 //
 
 #import "DetailViewController.h"
+#import "UIImageView+AFNetworking.h"
 
 @interface DetailViewController ()
+@property (weak, nonatomic) IBOutlet UIImageView *imageView;
+@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
+@property (weak, nonatomic) IBOutlet UIView *insideView;
+@property (weak, nonatomic) IBOutlet UILabel *movieTitleLabel;
+@property (weak, nonatomic) IBOutlet UILabel *synopsisLabel;
+
+
 
 @end
 
@@ -26,7 +34,33 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    NSLog(@"Movie title: %@",self.movie.title);
+    self.scrollView.scrollEnabled=true;
+    self.scrollView.contentSize=CGSizeMake(320, 1100);
+    
+    self.insideView.backgroundColor=[UIColor blackColor];
+    self.insideView.alpha=0.75;
+    
+    self.movieTitleLabel.textColor=[UIColor whiteColor];
+    self.movieTitleLabel.text=self.movie.title;
+    
+    self.synopsisLabel.textColor=[UIColor whiteColor];
+    
+    self.synopsisLabel.text=self.movie.synopsis;
+    [self.synopsisLabel setNumberOfLines:0];
+    [self.synopsisLabel sizeToFit];
+    
+   
+
+    
+    NSURL *url = [NSURL URLWithString:self.movie.posters[@"original"]];
+    NSURLRequest *request = [NSURLRequest requestWithURL:url];
+    
+    [self.imageView setImageWithURLRequest:request placeholderImage:self.lowResImage success:^(NSURLRequest *request, NSHTTPURLResponse *response, UIImage *image) {
+        self.imageView.image=image;
+    } failure:^(NSURLRequest *request, NSHTTPURLResponse *response, NSError *error) {
+        NSLog(@"Error:%@",error);
+    }];
 }
 
 - (void)didReceiveMemoryWarning

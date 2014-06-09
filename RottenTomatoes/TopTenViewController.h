@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TopTenViewController : UIViewController
+@interface TopTenViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
+@property(nonatomic,strong)NSString *url;
 
+- (void)getDataForTable;
 @end

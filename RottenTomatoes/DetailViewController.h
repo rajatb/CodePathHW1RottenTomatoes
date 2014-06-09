@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Movie.h"
 
 @interface DetailViewController : UIViewController
-
+@property(strong, nonatomic)Movie *movie;
+@property(strong, nonatomic)UIImage *lowResImage;
 @end
