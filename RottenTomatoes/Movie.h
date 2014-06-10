@@ -15,6 +15,8 @@
 @property(strong,nonatomic)NSDictionary *posters;
 @property(strong,nonatomic)NSNumber *audience_score;
 @property(strong,nonatomic)NSNumber *critics_score;
+@property(strong,nonatomic)NSNumber *runtime;
+@property(strong,nonatomic)NSNumber *mpaa_rating;
 
 -(id)initWithDictionary:(NSDictionary*)dictionary;
 +(NSArray*)moviesWithArray:(NSArray*)array;

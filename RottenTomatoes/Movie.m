@@ -19,6 +19,8 @@
         self.posters = dictionary[@"posters"];
         self.audience_score=[[dictionary objectForKey:@"ratings"] objectForKey:@"audience_score"];
         self.critics_score=[[dictionary objectForKey:@"ratings"] objectForKey:@"critics_score"];
+        self.mpaa_rating=dictionary[@"mpaa_rating"];
+        self.runtime=dictionary[@"runtime"];
     }
     
     return self;
