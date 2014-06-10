@@ -19,18 +19,17 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
     //To check for internet
-    Reachability *reachability = [Reachability reachabilityWithHostname:@"www.google.com"];
-    [reachability startNotifier];
+   // Reachability *reachability = [Reachability reachabilityWithHostname:@"www.google.com"];
+    //[reachability startNotifier];
     
     
-    
-    //Set navigation Controller for Top TenView Controoler
-    TopDVDSViewController *topTenVC = [[TopDVDSViewController alloc]initWithNibName:@"TopTenViewController" bundle:nil];
+    TopTenViewController *topTenVC=[[TopTenViewController alloc]initWithEnum:Top_Ten_Url];
     UINavigationController *navigationController = [[UINavigationController alloc]initWithRootViewController:topTenVC];
     navigationController.tabBarItem.title=@"Top DVDs";
     navigationController.tabBarItem.image=[UIImage imageNamed:@"cd"];
     
-    BoxOffViewController *boxOffVC = [[BoxOffViewController alloc]initWithNibName:@"TopTenViewController" bundle:nil];
+
+    TopTenViewController *boxOffVC=[[TopTenViewController alloc]initWithEnum:BoxOfficeUrl];
     UINavigationController *navigationControllerForBoxOffVC = [[UINavigationController alloc]initWithRootViewController:boxOffVC];
     navigationControllerForBoxOffVC.tabBarItem.title=@"Box Office";
     navigationControllerForBoxOffVC.tabBarItem.image=[UIImage imageNamed:@"clapper"];

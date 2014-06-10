@@ -17,6 +17,8 @@
         self.title = dictionary[@"title"];
         self.synopsis = dictionary[@"synopsis"];
         self.posters = dictionary[@"posters"];
+        self.audience_score=[[dictionary objectForKey:@"ratings"] objectForKey:@"audience_score"];
+        self.critics_score=[[dictionary objectForKey:@"ratings"] objectForKey:@"critics_score"];
     }
     
     return self;

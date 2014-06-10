@@ -34,7 +34,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    NSLog(@"Movie title: %@",self.movie.title);
+   
     self.scrollView.scrollEnabled=true;
     self.scrollView.contentSize=CGSizeMake(320, 1100);
     
@@ -50,17 +50,15 @@
     [self.synopsisLabel setNumberOfLines:0];
     [self.synopsisLabel sizeToFit];
     
-   
-
     
-    NSURL *url = [NSURL URLWithString:self.movie.posters[@"original"]];
-    NSURLRequest *request = [NSURLRequest requestWithURL:url];
+    NSCachedURLResponse *response = [[NSURLCache sharedURLCache] cachedResponseForRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:self.movie.posters[@"profile"]]]];
+    UIImage *placeholder=nil;
+    if (response) {
+        NSLog(@"Detail image low res was there");
+        placeholder=[[UIImage alloc]initWithData:response.data];
+    }
     
-    [self.imageView setImageWithURLRequest:request placeholderImage:self.lowResImage success:^(NSURLRequest *request, NSHTTPURLResponse *response, UIImage *image) {
-        self.imageView.image=image;
-    } failure:^(NSURLRequest *request, NSHTTPURLResponse *response, NSError *error) {
-        NSLog(@"Error:%@",error);
-    }];
+    [self.imageView setImageWithURL:[NSURL URLWithString:self.movie.posters[@"original"]] placeholderImage:placeholder];
 }
 
 - (void)didReceiveMemoryWarning

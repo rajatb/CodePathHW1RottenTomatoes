@@ -27,8 +27,6 @@
 		13F068121945037700FF6C93 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 13F068101945037700FF6C93 /* DetailViewController.m */; };
 		13F068131945037700FF6C93 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13F068111945037700FF6C93 /* DetailViewController.xib */; };
 		13F06817194512A000FF6C93 /* UIColor+Expanded.m in Sources */ = {isa = PBXBuildFile; fileRef = 13F06816194512A000FF6C93 /* UIColor+Expanded.m */; };
-		13F0681A1945346E00FF6C93 /* BoxOffViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 13F068191945346E00FF6C93 /* BoxOffViewController.m */; };
-		13F0682219453F0400FF6C93 /* TopDVDSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 13F0682119453F0400FF6C93 /* TopDVDSViewController.m */; };
 		C4029356B34D4613846AA5FC /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F28C17551E464163A9230DFF /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -72,10 +70,6 @@
 		13F068111945037700FF6C93 /* DetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
 		13F06815194512A000FF6C93 /* UIColor+Expanded.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Expanded.h"; sourceTree = "<group>"; };
 		13F06816194512A000FF6C93 /* UIColor+Expanded.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Expanded.m"; sourceTree = "<group>"; };
-		13F068181945346E00FF6C93 /* BoxOffViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoxOffViewController.h; sourceTree = "<group>"; };
-		13F068191945346E00FF6C93 /* BoxOffViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoxOffViewController.m; sourceTree = "<group>"; };
-		13F0682019453F0400FF6C93 /* TopDVDSViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopDVDSViewController.h; sourceTree = "<group>"; };
-		13F0682119453F0400FF6C93 /* TopDVDSViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopDVDSViewController.m; sourceTree = "<group>"; };
 		B0155691BBA34A96AC50FB42 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		F28C17551E464163A9230DFF /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -209,10 +203,6 @@
 				13F068101945037700FF6C93 /* DetailViewController.m */,
 				13F068111945037700FF6C93 /* DetailViewController.xib */,
 				13EC3FEE19439B4700C91469 /* TopTenViewController.xib */,
-				13F068181945346E00FF6C93 /* BoxOffViewController.h */,
-				13F068191945346E00FF6C93 /* BoxOffViewController.m */,
-				13F0682019453F0400FF6C93 /* TopDVDSViewController.h */,
-				13F0682119453F0400FF6C93 /* TopDVDSViewController.m */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -363,10 +353,8 @@
 				13EC3FC81943960E00C91469 /* AppDelegate.m in Sources */,
 				13CB78FC1943C79B00B8056B /* Movie.m in Sources */,
 				13F06817194512A000FF6C93 /* UIColor+Expanded.m in Sources */,
-				13F0681A1945346E00FF6C93 /* BoxOffViewController.m in Sources */,
 				13CB78F41943B60A00B8056B /* MovieCell.m in Sources */,
 				13EC3FC41943960E00C91469 /* main.m in Sources */,
-				13F0682219453F0400FF6C93 /* TopDVDSViewController.m in Sources */,
 				13F068121945037700FF6C93 /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

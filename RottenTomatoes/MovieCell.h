@@ -14,5 +14,7 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 @property (weak, nonatomic) IBOutlet UILabel *synopsisLabel;
+@property (weak, nonatomic) IBOutlet UILabel *criticsScore;
+@property (weak, nonatomic) IBOutlet UILabel *audienceScoreLabel;
 
 @end

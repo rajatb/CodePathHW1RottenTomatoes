@@ -13,6 +13,8 @@
 @property(strong,nonatomic)NSString *title;
 @property(strong,nonatomic)NSString *synopsis;
 @property(strong,nonatomic)NSDictionary *posters;
+@property(strong,nonatomic)NSNumber *audience_score;
+@property(strong,nonatomic)NSNumber *critics_score;
 
 -(id)initWithDictionary:(NSDictionary*)dictionary;
 +(NSArray*)moviesWithArray:(NSArray*)array;
