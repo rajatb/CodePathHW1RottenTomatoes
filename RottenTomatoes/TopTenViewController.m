@@ -76,7 +76,8 @@ static const NSString *RT_API_KEY = @"eguunce463gp87nf7xjtsj5s";
     
     Movie *movie = self.movies[indexPath.row];
     movieCell.titleLabel.text = movie.title;
-    movieCell.synopsisLabel.text = movie.synopsis;
+    movieCell.synopsisLabel.text = movie.castMembersList;
+    [movieCell.synopsisLabel sizeToFit];
     movieCell.criticsScore.text=[NSString stringWithFormat:@"%@", movie.critics_score];
     movieCell.audienceScoreLabel.text= [NSString stringWithFormat:@"%@", movie.audience_score];
     movieCell.mpaaRatingLabel.text=[NSString stringWithFormat:@"%@, %@ min", movie.mpaa_rating, movie.runtime];
