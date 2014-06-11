@@ -35,9 +35,9 @@ References Used:
 A description of the project:
 Project uses Rotten Tomatoes Api to pull information about latest dvd and movies, shows it in a table View. It also has a search functionality. 
 
-Add a LICENSE to the repository: 
+LICENSE to the repository: 
 
-Add a acknowledging the open-source libraries used:
+Open-Source libraries used:
   1. AFNetworking
   2. SVProgressHUD
 
