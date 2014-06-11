@@ -87,6 +87,8 @@ static const NSString *RT_API_KEY = @"eguunce463gp87nf7xjtsj5s";
     [UIView animateWithDuration:2 animations:^{
         movieCell.posterImage.alpha=1;
     }];
+    
+    movieCell.selectionStyle=UITableViewCellSelectionStyleNone;
 
     return movieCell;
 }
@@ -104,6 +106,10 @@ static const NSString *RT_API_KEY = @"eguunce463gp87nf7xjtsj5s";
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (BOOL)tableView:(UITableView *)tableView shouldHighlightRowAtIndexPath:(NSIndexPath *)indexPath {
+    return true;
 }
 
 #pragma mark -
