@@ -31,4 +31,13 @@ References Used:
   7. Scroll View: Create a scroll view bigger than the screen dimension, autolayout false.
 
 
+A description of the project:
+
+Add a LICENSE to the repository: 
+
+Add a acknowledging the open-source libraries used:
+  1. AFNetworking
+  2. SVProgressHUD
+
+
 CodePath HW1 Rotten Tomatoes Due: June 10. 2014 10pm
