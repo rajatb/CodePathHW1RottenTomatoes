@@ -15,7 +15,7 @@
 @property (weak, nonatomic) IBOutlet UIView *insideView;
 @property (weak, nonatomic) IBOutlet UILabel *movieTitleLabel;
 @property (weak, nonatomic) IBOutlet UILabel *synopsisLabel;
-
+@property (weak, nonatomic) IBOutlet UILabel *castListLabel;
 
 
 @end
@@ -44,8 +44,12 @@
     self.movieTitleLabel.textColor=[UIColor whiteColor];
     self.movieTitleLabel.text=self.movie.title;
     
-    self.synopsisLabel.textColor=[UIColor whiteColor];
+    self.castListLabel.textColor=[UIColor whiteColor];
+    self.castListLabel.text=[NSString stringWithFormat:@"Cast: %@",self.movie.castMembersList];
+    [self.castListLabel setNumberOfLines:0];
+    [self.castListLabel sizeToFit];
     
+    self.synopsisLabel.textColor=[UIColor whiteColor];
     self.synopsisLabel.text=self.movie.synopsis;
     [self.synopsisLabel setNumberOfLines:0];
     [self.synopsisLabel sizeToFit];
