@@ -33,6 +33,7 @@ References Used:
 
 
 A description of the project:
+Project uses Rotten Tomatoes Api to pull information about latest dvd and movies, shows it in a table View. It also has a search functionality. 
 
 Add a LICENSE to the repository: 
 
@@ -44,5 +45,5 @@ Gif Image
 
 
 ![Alt Text](RottenTomatoesDemo.gif)
-[[ https://github.com/rajatb/CodePathHW1RottenTomatoes/blob/master/RottenTomatoesDemo.gif | height = 100px ]]
+
 CodePath HW1 Rotten Tomatoes Due: June 10. 2014 10pm
