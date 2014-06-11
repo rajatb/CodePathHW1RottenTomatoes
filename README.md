@@ -29,6 +29,7 @@ References Used:
   5. Tab Bar Controller: https://github.com/thecodepath/ios_guides/wiki/Using-Tab-Bar-Controllers
   6. Caching: http://blog.originate.com/blog/2014/02/20/afimagecache-vs-nsurlcache/
   7. Scroll View: Create a scroll view bigger than the screen dimension, autolayout false.
+  8. Array to String: http://stackoverflow.com/questions/12199619/construct-nsstring-from-the-description-method-of-each-nsarray-item
 
 
 A description of the project:
