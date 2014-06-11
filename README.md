@@ -42,5 +42,5 @@ Add a acknowledging the open-source libraries used:
 
 Gif Image
 ![Alt Text](https://github.com/rajatb/CodePathHW1RottenTomatoes/blob/master/RottenTomatoesDemo.gif)
-[[ https://github.com/rajatb/CodePathHW1RottenTomatoes/blob/master/RottenTomatoesDemo.gif| height = 100px ]]
+[[ https://github.com/rajatb/CodePathHW1RottenTomatoes/blob/master/RottenTomatoesDemo.gif | height = 100px ]]
 CodePath HW1 Rotten Tomatoes Due: June 10. 2014 10pm
