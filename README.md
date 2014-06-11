@@ -13,7 +13,7 @@ Completed User Stories:
 - [x] Optional: All images fade in 
 - [x] Optional: For the large poster, load the low-res image first, switch to high-res when complete
 - [x] Optional: All images should be cached in memory and disk.
-- [ ] Optional: Customize the highlight and selection effect of the cell.
+- [x] Optional: Customize the highlight and selection effect of the cell.
 - [x] Optional: Customize the navigation bar.
 - [x] Optional: Add a tab bar for Box Office and DVD.
 - [x] Optional: Add a search bar.
@@ -40,5 +40,6 @@ Add a acknowledging the open-source libraries used:
   1. AFNetworking
   2. SVProgressHUD
 
-
+Gif Image
+![Alt Text](https://www.dropbox.com/s/icf7fsnvoy63572/RottenTomatoesDemo.gif)
 CodePath HW1 Rotten Tomatoes Due: June 10. 2014 10pm
