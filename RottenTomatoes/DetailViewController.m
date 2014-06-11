@@ -42,7 +42,7 @@
     self.insideView.alpha=0.75;
     
     self.movieTitleLabel.textColor=[UIColor whiteColor];
-    self.movieTitleLabel.text=self.movie.title;
+    self.movieTitleLabel.text=[NSString stringWithFormat:@"%@ (%@)",self.movie.title, self.movie.year];
     
     self.castListLabel.textColor=[UIColor whiteColor];
     self.castListLabel.text=[NSString stringWithFormat:@"Cast: %@",self.movie.castMembersList];
@@ -58,7 +58,6 @@
     NSCachedURLResponse *response = [[NSURLCache sharedURLCache] cachedResponseForRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:self.movie.posters[@"profile"]]]];
     UIImage *placeholder=nil;
     if (response) {
-        NSLog(@"Detail image low res was there");
         placeholder=[[UIImage alloc]initWithData:response.data];
     }
     

@@ -132,12 +132,10 @@ static const NSString *RT_API_KEY = @"eguunce463gp87nf7xjtsj5s";
     [self showProgressWithStatus];
     [NSURLConnection sendAsynchronousRequest:request queue:[NSOperationQueue mainQueue] completionHandler:^(NSURLResponse *response, NSData *data, NSError *connectionError) {
                 if(connectionError !=nil){
-                    NSLog(@"ConnectionError:%@",connectionError);
                     [self showNoInternetLabel];
                     
         } else {
             id object = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
-            NSLog(@"%@", object);
             self.noInternetLabel.hidden=YES;
             
             self.movies = [Movie moviesWithArray:object[@"movies"]];
@@ -167,7 +165,7 @@ static const NSString *RT_API_KEY = @"eguunce463gp87nf7xjtsj5s";
     [self getDataForTable];
     [self.view endEditing:YES];
     self.url=tempURL;
-    NSLog(@"URL after Search :%@",self.url);
+    
 }
 
 -(void)searchBarCancelButtonClicked:(UISearchBar *)searchBar {

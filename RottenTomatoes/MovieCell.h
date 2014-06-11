@@ -18,4 +18,5 @@
 @property (weak, nonatomic) IBOutlet UILabel *audienceScoreLabel;
 @property (weak, nonatomic) IBOutlet UILabel *mpaaRatingLabel;
 
+
 @end

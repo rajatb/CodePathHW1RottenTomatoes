@@ -18,6 +18,7 @@
 @property(strong,nonatomic)NSNumber *runtime;
 @property(strong,nonatomic)NSNumber *mpaa_rating;
 @property(strong,nonatomic)NSString *castMembersList;
+@property(strong,nonatomic)NSNumber *year;
 
 -(id)initWithDictionary:(NSDictionary*)dictionary;
 +(NSArray*)moviesWithArray:(NSArray*)array;
