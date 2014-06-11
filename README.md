@@ -1,7 +1,7 @@
 RottenTomatoes Box Office
 =========================
 
-Time spent: 22 hours spent in total
+Time spent:  27 hours spent in total
 
 Completed User Stories: 
 
